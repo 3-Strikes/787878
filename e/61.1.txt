@@ -1,0 +1,5 @@
+#Update...
+#Mon Sep 08 19:22:25 CST 2025
+score=100
+name=\u00E5\u00BC\u00A0\u00E4\u00B8\u0089
+age=18

@@ -2,7 +2,7 @@ package _前缀和_差分_递归;
 
 public class FibonacciCalculator {
     public static void main(String[] args) {
-        int limit = 10;
+        int limit = 1000000000;
 
         long start1 = System.currentTimeMillis();
         System.out.println("递归法计算一千以内的斐波那契数列:");

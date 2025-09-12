@@ -14,34 +14,34 @@ public class PrefixSumDiffTest {
     public static void main(String[] args) {
         // 初始化一个简单的测试数组
         originalArray = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
-        System.out.println("原始数组: " + originalArray);
+        System.out.println("a原始数组: " + originalArray);
         
         // 初始化前缀和与差分数组
         initPrefixSum();
         initDiffArray();
         
-        System.out.println("前缀和数组: " + prefixSum);
-        System.out.println("差分数组: " + diffArray);
+        System.out.println("b前缀和数组: " + prefixSum);
+        System.out.println("c差分数组: " + diffArray);
         
-//        // 测试区间查询
-//        int l = 2, r = 5;
-//        System.out.println("\n区间 [" + l + ", " + r + "] 的和:");
-//        System.out.println("直接计算: " + directRangeSum(l, r));
-//        System.out.println("前缀和计算: " + prefixSumRangeSum(l, r));
-//        System.out.println("差分还原后计算: " + diffRangeSum(l, r));
-//
-//        // 测试区间更新
-//        int updateL = 1, updateR = 4;
-//        int value = 2;
-//        System.out.println("\n对区间 [" + updateL + ", " + updateR + "] 每个元素加 " + value);
-//        rangeUpdate(updateL, updateR, value);
-//
-//        System.out.println("更新后的差分数组: " + diffArray);
-//        System.out.println("更新后的数组: " + getUpdatedArray());
-//
-//        // 测试更新后的区间查询
-//        System.out.println("\n更新后区间 [" + l + ", " + r + "] 的和:");
-//        System.out.println("差分还原后计算: " + diffRangeSum(l, r));
+        // 测试区间查询
+        int l = 2, r = 5;
+        System.out.println("\n区间 [" + l + ", " + r + "] 的和:");
+        System.out.println("直接计算: " + directRangeSum(l, r));
+        System.out.println("前缀和计算: " + prefixSumRangeSum(l, r));
+        System.out.println("差分还原后计算: " + diffRangeSum(l, r));
+
+        // 测试区间更新
+        int updateL = 1, updateR = 4;
+        int value = 2;
+        System.out.println("\n对区间 [" + updateL + ", " + updateR + "] 每个元素加 " + value);
+        rangeUpdate(updateL, updateR, value);
+
+        System.out.println("更新后的差分数组: " + diffArray);
+        System.out.println("更新后的数组: " + getUpdatedArray());
+
+        // 测试更新后的区间查询
+        System.out.println("\n更新后区间 [" + l + ", " + r + "] 的和:");
+        System.out.println("差分还原后计算: " + diffRangeSum(l, r));
     }
     
     /**
