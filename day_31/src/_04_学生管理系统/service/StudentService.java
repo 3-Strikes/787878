@@ -11,7 +11,7 @@ public class StudentService implements SService{
 
     // 涉及一个 dao层的对象,用于从文件中读数据或写数据
     private SDao dao = new StudentDao();
-    private   List<Student> list ;
+    private List<Student> list ;
     {
         list= dao.readList();
     }
